@@ -744,7 +744,7 @@ export async function deleteUpdate(message) {
             ┌─⊷🪩𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀🪩
             │✫ -  *Number :* @${participant.split`@`[0]} 
             └─────────────
-             To deactivate delete the Antidelete var✅
+             *To Delete massage show Dexter programs*✅
             `.trim(), msg, {
                         mentions: [participant]
                     })
