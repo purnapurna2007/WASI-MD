@@ -741,7 +741,7 @@ export async function deleteUpdate(message) {
        
             await this.reply(msg.chat, `
             ✅ Deleted a message 
-            ┌─⊷🪩𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀🪩
+            ┌─⊷🪩𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 𝘋𝘌𝘟𝘛𝘌𝘙🪩
             │✫ -  *Number :* @${participant.split`@`[0]} 
             └─────────────
              *delete massage show programs dexter* ✅
