@@ -1,6 +1,6 @@
 FROM node:lts-buster
 
-# Install dependencies
+# Install necessary dependencies
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
@@ -12,14 +12,15 @@ RUN apt-get update && \
 # Set the working directory
 WORKDIR /app
 
-# Copy the package.json
+# Copy package.json and other project files into the container
 COPY package.json .
+COPY . .
 
-# Install Node.js dependencies with legacy-peer-deps to avoid conflicts
+# Install Node.js dependencies
 RUN npm install --legacy-peer-deps && npm install qrcode-terminal --legacy-peer-deps
 
-# Expose the necessary port
+# Expose the port
 EXPOSE 5000
 
-# Define the command to start your application
+# Start the application
 CMD ["npm", "start"]
